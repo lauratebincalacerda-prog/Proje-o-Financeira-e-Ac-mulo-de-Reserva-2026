@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeção Financeira e Reserva Anual</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js para visualização em gráfico -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Projeção de Reserva Financeira</h1>
+      <p class="subtitle">Acompanhamento de evolução salarial, rendimentos e reserva final.</p>
+    </header>
+
+    <div class="content">
+      <!-- Tabela com formatação avançada -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Ano</th>
+              <th>Idade</th>
+              <th>Salário</th>
+              <th>Reserva Anual</th>
+              <th>Valor Inicial</th>
+              <th>Rendimento</th>
+              <th class="highlight-header">Valor Final</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2026</td>
+              <td>18</td>
+              <td>R$ 1.500,00</td>
+              <td>R$ 180,00</td>
+              <td>R$ 0,00</td>
+              <td>R$ 0,00</td>
+              <td class="highlight-cell">R$ 180,00</td>
+            </tr>
+            <tr>
+              <td>2027</td>
+              <td>19</td>
+              <td>R$ 1.650,00</td>
+              <td>R$ 198,00</td>
+              <td>R$ 180,00</td>
+              <td>R$ 9,00</td>
+              <td class="highlight-cell">R$ 387,00</td>
+            </tr>
+            <tr>
+              <td>2028</td>
+              <td>20</td>
+              <td>R$ 1.815,00</td>
+              <td>R$ 217,80</td>
+              <td>R$ 387,00</td>
+              <td>R$ 19,35</td>
+              <td class="highlight-cell">R$ 624,15</td>
+            </tr>
+            <tr>
+              <td>2029</td>
+              <td>21</td>
+              <td>R$ 1.996,50</td>
+              <td>R$ 239,58</td>
+              <td>R$ 624,15</td>
+              <td>R$ 31,21</td>
+              <td class="highlight-cell">R$ 894,94</td>
+            </tr>
+            <tr>
+              <td>2030</td>
+              <td>22</td>
+              <td>R$ 2.196,15</td>
+              <td>R$ 263,54</td>
+              <td>R$ 894,94</td>
+              <td>R$ 44,75</td>
+              <td class="highlight-cell">R$ 1.203,22</td>
+            </tr>
+            <tr>
+              <td>2031</td>
+              <td>23</td>
+              <td>R$ 2.415,77</td>
+              <td>R$ 289,89</td>
+              <td>R$ 1.203,22</td>
+              <td>R$ 60,16</td>
+              <td class="highlight-cell">R$ 1.553,28</td>
+            </tr>
+            <tr>
+              <td>2032</td>
+              <td>24</td>
+              <td>R$ 2.657,34</td>
+              <td>R$ 318,88</td>
+              <td>R$ 1.553,28</td>
+              <td>R$ 77,66</td>
+              <td class="highlight-cell">R$ 1.949,82</td>
+            </tr>
+            <tr>
+              <td>2033</td>
+              <td>25</td>
+              <td>R$ 2.923,08</td>
+              <td>R$ 350,77</td>
+              <td>R$ 1.949,82</td>
+              <td>R$ 97,49</td>
+              <td class="highlight-cell">R$ 2.398,08</td>
+            </tr>
+            <tr>
+              <td>2034</td>
+              <td>26</td>
+              <td>R$ 3.215,38</td>
+              <td>R$ 385,85</td>
+              <td>R$ 2.398,08</td>
+              <td>R$ 119,90</td>
+              <td class="highlight-cell">R$ 2.903,83</td>
+            </tr>
+            <tr>
+              <td>2035</td>
+              <td>27</td>
+              <td>R$ 3.536,92</td>
+              <td>R$ 424,43</td>
+              <td>R$ 2.903,83</td>
+              <td>R$ 145,19</td>
+              <td class="highlight-cell">R$ 3.473,45</td>
+            </tr>
+            <tr class="featured-row">
+              <td><strong>2036</strong></td>
+              <td><strong>28</strong></td>
+              <td><strong>R$ 3.890,61</strong></td>
+              <td><strong>R$ 466,87</strong></td>
+              <td><strong>R$ 3.473,45</strong></td>
+              <td><strong>R$ 173,67</strong></td>
+              <td class="highlight-cell final-target"><strong>R$ 4.114,00</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Gráfico de Evolução Patrimonial -->
+      <div class="chart-section">
+        <canvas id="graficoEvolucao"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
